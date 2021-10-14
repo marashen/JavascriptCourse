@@ -1,0 +1,59 @@
+<script>
+		alert("Welcome!");
+	</script>
+	<script>
+		function starsA(){
+			//largest
+				document.getElementById("LSA").innerHTML = "UY Scuti is the largest, being 265 times the size of our Sun! ";
+				document.getElementById("LSA").style.color = 'blue';
+			//closest
+				document.getElementById("CSA").innerHTML = "Second to the Sun the closest star is Proxima Centauri, which is 4.246 light years away! ";
+				document.getElementById("CSA").style.color = 'blue';
+			//smallest
+				document.getElementById("SSA").innerHTML = "EBLM J0555-57Ab is the smallest, just about the size of Saturn! ";
+				document.getElementById("SSA").style.color = 'blue';
+			//farthest
+				document.getElementById("FSA").innerHTML = "Icarus is the farthest, its light has taken over 9 billion years to reach us! ";
+				document.getElementById("FSA").style.color = 'blue';
+			//youngest
+				document.getElementById("YSA").innerHTML = "Swift J1818.0-1607 is the youngest star discovered yet at 240 years old! ";
+				document.getElementById("YSA").style.color = 'blue';
+			//brightest
+				document.getElementById("BSA").innerHTML = "Sirius A is the brightest star in Earth's night sky, only planets & the moon outshine it! ";
+				document.getElementById("BSA").style.color = 'blue';
+			//oldest
+				document.getElementById("OSA").innerHTML = "Methuselah is the oldest known star, estimated at around 13.5 billion years old! ";
+				document.getElementById("OSA").style.color = 'blue';
+			//densest
+				document.getElementById("DSA").innerHTML = "J0740+6620 is not only one of the densest stars, but the most massive neutron star ever discovered! ";
+				document.getElementById("DSA").style.color = 'blue';
+		}
+	</script>
+	<script>
+		function update() {
+                     	var dt = new Date();
+			var he = dt.getHours()
+			var hm = he + 10
+			if (hm >= 24) {
+				hm = hm - 24;
+			}
+			var me = dt.getMinutes()
+			var mm = me - 11
+			if (mm < 0) {
+				mm = mm + 11;
+			}
+			var se = dt.getSeconds()
+			var sm = se - 3
+			if (sm < 0) {
+				sm = sm + 3;
+			}
+			document.getElementById('hour').innerHTML = hm;
+			document.getElementById('min').innerHTML = mm;
+			document.getElementById('sec').innerHTML = sm;
+			document.getElementById("hour").style.color = 'red';
+			document.getElementById("min").style.color = 'red';
+			document.getElementById("sec").style.color = 'red';
+			document.getElementById("hid1").style.color = 'black';
+			document.getElementById("hid2").style.color = 'black';
+		}
+	</script>
