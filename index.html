@@ -4,5 +4,26 @@
     <script src="JS/main.js"></script>
   </head>
   <body>
+    <p><font color="orange" size="5">Current Time on Mars:
+				<span id="hour" style="color:black;">??</span>
+				<span id="hid1" style="color:white;">:</span>
+				<span id="min" style="color:black;">??</span>
+				<span id="hid2" style="color:white;">:</span>
+				<span id="sec" style="color:black;">??</span>
+			</font>
+			</p>
+			<p><button onclick=update()>Reveal Martian Time</button></p>
+    <p class=font3> If you're up for some research.. </p>
+		<form action="">
+			<label id=LSA>Largest Star? </label><input type="text" name="LS"><br>
+			<label id=CSA>Closest Star? </label><input type="text" name="CS"><br>
+			<label id=SSA>Smallest Star? </label><input type="text" name="SS"><br>
+			<label id=FSA>Farthest Star? </label><input type="text" name="FS"><br>
+			<label id=YSA>Youngest Star? </label><input type=”text” name=”YS”><br>
+			<label id=BSA>Brightest Star? </label><input type=”text” name=”BS”><br>
+			<label id=OSA>Oldest Star? </label><input type=”text” name=”OS”><br>
+			<label id=DSA>Densest Star? </label><input type=”text” name=”DS”><br>
+			<input type="button" value="Reveal Answers!" onclick="starsA()">
+		</form>
   </body>
 </html>
