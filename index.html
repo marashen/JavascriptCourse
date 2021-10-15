@@ -1,8 +1,91 @@
-<!Doctype>
-<html>
-  <head>
-    <script src="JS/main.js"></script>
-  </head>
+<!Doctype html>
+<html lang=en>
+  <script>
+		function calcR() {
+			var timeV = document.getElementById("time1").value;
+			var velV = document.getElementById("vel").value;
+			var lightV = document.getElementById("light1").value;
+			var eqp1 = parseFloat(lightV) * parseFloat(lightV)
+			var eqp2 = parseFloat(velV) * parseFloat(velV)
+			var eqp3 = eqp2 / eqp1
+			var eqp4 = 1 - eqp3
+			var eqp5 = Math.sqrt(eqp4)
+			var answerS = parseFloat(timeV) * eqp5
+			var answerSR = Math.round(answerS)
+
+			if(!isNaN(answerSR)) {
+				document.getElementById("srans").innerHTML = "Time Dilation in seconds = "+answerSR;
+				document.getElementById("srans").style.color = 'darkgreen';
+				document.getElementById("srans").style.fontFamily = 'Courier';
+				document.getElementById("srans").style.fontStyle = 'italic';
+
+			}	
+			else {
+				document.getElementById("srans").innerHTML = "Try double checking your numbers!"
+				document.getElementById("srans").style.color = 'red';
+			}
+		}
+	</script>
+  <script>
+		function galaxy(Name, Distance, Diameter, Stars) {
+			this.galaxyN = Name;
+			this.galaxyT = Distance;
+			this.galaxyL = Diameter;
+			this.galaxyS = Stars;
+		}
+
+		var g1 = new galaxy("The Milky Way", "26,000 ly", "100,000 ly's", "100 billion");
+		var g2 = new galaxy("Andromeda", "2.537m ly", "260,000 ly's", "1 trillion");
+		var g3 = new galaxy("Triangulum", "2.723m ly", "60,000 ly's", "40 billion");
+		var g4 = new galaxy("NGC 6822", "1.631m ly", "7,000 ly's", "10 million");
+
+		function g1click() {
+			document.getElementById("mway").innerHTML = "This is "+g1.galaxyN +". The galactic center is located about "+g1.galaxyT +" from our Solar System. With a diameter of "+g1.galaxyL +", it's estimated to have over "+g1.galaxyS +" stars!";
+		}
+		function g2click() {
+			document.getElementById("andro").innerHTML = "This is "+g2.galaxyN +". It is located about "+g2.galaxyT +" from our own galaxy! It has a massive range with a diameter nearing "+g2.galaxyL +" & contains over "+g2.galaxyS +" stars!";
+		}
+		function g3click() {
+			document.getElementById("trig").innerHTML = "This is "+g3.galaxyN +". The galactic center is located about "+g3.galaxyT +" from our Solar System. With a diameter of "+g3.galaxyL +", it's estimated to have over "+g3.galaxyS +" stars!";
+		}
+		function g4click() {
+			document.getElementById("ngc").innerHTML = "This is "+g4.galaxyN +". It is located about "+g4.galaxyT +" from our own galaxy! It has a massive range with a diameter nearing "+g4.galaxyL +" & contains over "+g4.galaxyS +" stars!";
+		}
+	</script>
   <body>
-  </body>
-</html>
+    <h2><font color="silver" face="Lobster"><u> Gravitational Time Dilation </u></h2></p>
+				<h4 id="gtdans"> Try seeing how gravity affects time! Answer will be in seconds. </h4></font>
+			<p> 	T<sub>0</sub> (Unit: s)<input type="text" id="time2"><br>
+				M (Unit: kg)<input type="text" id="mass"><br>
+				Exponent for M<input type="text" id="exop"><br>
+				r (Unit: m)<input type="text" id="dist"><br>
+				G (Value: 0.000000000066743)<input type="text" id="gcons"><br>
+				c (Value: 299,792,458)<input type="text" id="light2"><br>
+			<button onclick="calcG()">Calculate Time Dilation</button></p>
+  		<h3 style="color: blue;"> Galaxies in The Local Group </h3>
+	<table>
+		<tr>
+			<td style="background-color:black;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjjYkqQt8FYSe9WOQ6zo82w2eJoNE070W0NQ&usqp=CAU" width="350" "height="350" alt="The Milky Way"></td>
+			<td style="background-color:black;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVs_pCKVTZX2iJG1k0Dfa_TA9bD3n7xyZLEw&usqp=CAU" width="350" height="350" alt="Andromeda"></td>
+		</tr>
+		<tr>
+			<td id="mway" style="background-color:blue;"></td>
+			<td id="andro" style="background-color:blue;"></td>
+		</tr>
+		<tr>
+			<td><input class="inputB" type="button" value="Information on the Galaxy in this image!" onclick="g1click()"></td>
+			<td><input class="inputB" type="button" value="Information on the Galaxy in this image!" onclick="g2click()"></td>
+		</tr>
+		<tr>
+			<td style="background-color:black;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGGbBKclja7peiT03c8pykt4xDx1aYr24IKA&usqp=CAU" width="350" "height="350" alt="Triangulum Galaxy"></td>
+			<td style="background-color:black;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH71mpDiAapdROGtROnh7N4FY2m9D2R-f3bQ&usqp=CAU" width="350" height="350" alt="NGC 6822"></td>
+		</tr>
+		<tr>
+			<td id="trig" style="background-color:blue;"></td>
+			<td id="ngc" style="background-color:blue;"></td>
+		</tr>
+		<tr>
+			<td><input class="inputB" type="button" value="Information on the Galaxy in this image!" onclick="g3click()"></td>
+			<td><input class="inputB" type="button" value="Information on the Galaxy in this image!" onclick="g4click()"></td>
+		</tr>
+	</table>
