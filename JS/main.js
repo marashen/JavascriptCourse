@@ -6,6 +6,6 @@ function dict() {
     Age: "5",
     Sound: "Bark!",
     };
-    delete Animal.Sound;
-    document.getElementById("dicti").innerHTML = Animal.Sound;
+    delete ani.Sound;
+    document.getElementById("dicti").innerHTML = ani.Sound;
 }
