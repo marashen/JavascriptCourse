@@ -2,15 +2,83 @@
 <html>
   <head>
     <script src="JS/main.js"></script>
+    <style src="CSS/main.css"></style>
   </head>
   <body>
-    <p id="conca"></p>
-<button onclick="fsen()">Click</button>
-<p id="slice"></p>
-<button onclick="sliceR()">Click</button>
-<p id="string"></p>
-<button onclick="stringM()">Click</button>
-<p id="price"></p>
-<button onclick="priceM()">Click</button>
+    <p style="color:yellow;"> Enter a number between 1 & 100 below to see special relativity in clock time! </p>
+					<table>
+					<tr>
+						<td colspan="1"><input class="inputB" type="button" onclick="clocksS()" value="Reset"></td>
+						<td><input class="inputT" type="text" id="lightP"></td>
+						<td><input class="inputB" type="button" onclick="clocksA()" value="Run the Clocks!"></td>
+					<tr>
+						<th> Earth Time (Years) </th>
+						<th> Relative Time (Years) </th>
+						<th> Light Speed % </th>
+					</tr>
+					<tr>
+						<td id="earthX" style="background-color:yellow;"></td>
+						<td id="relativeX" style="background-color:yellow;"></td>
+						<td id="lightX" style="background-color:yellow;"></td>
+					</tr>
+					</table>
+    <div class="slideshow">
+				<div class="slides fade">
+					<div class="numbertext">0 / 8</div>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHymRKii_c_hCLiVeu338mrMvi7zLRp_q6ew&usqp=CAU" width="250" height="500" alt="The Sun" style="width:100%">
+				<div class="text">The Sun</div>
+  			</div>
+  				<div class="slides fade">
+					<div class="numbertext">1 / 8</div>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiINoFmdc2af9BkdPGtZjuzKlTDYUEUre-Jg&usqp=CAU" width="250" height="500" alt="Mercury" style="width:100%">
+				<div class="text">Mercury</div>
+			</div>
+				<div class="slides fade">
+				<div class="numbertext">2 / 8</div>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxVFk_FEwYcngsxFfNSfAXMJbBYS71fkKhkg&usqp=CAU" width="250" height="500" alt="Venus" style="width:100%">
+				<div class="text">Venus</div>
+			</div>
+				<div class="slides fade">
+				<div class="numbertext">3 / 8</div>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdME14mwONKrGv8zCoiJk81BOUDcnSpe-Bw&usqp=CAU" width="250" height="500" alt="Earth" style="width:100%">
+				<div class="text">Earth</div>
+			</div>
+				<div class="slides fade">
+				<div class="numbertext">4 / 8</div>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMQWd7-N09QoyjNZgGdVxV6GzlbPfyJxcuow&usqp=CAU" width="250" height="500" alt="Mars" style="width:100%">
+				<div class="text">Mars</div>
+			</div>
+				<div class="slides fade">
+				<div class="numbertext">5 / 8</div>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYqr62-LS91N9NjR_HJ6eQYvK8GyMRM-a2QQ&usqp=CAU" width="250" height="500" alt="Jupiter" style="width:100%">
+				<div class="text">Jupiter</div>
+			</div>
+				<div class="slides fade">
+				<div class="numbertext">6 / 8</div>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSshgpQBj2V3ZMlJPos9GoTrlTDie2Knt5DpQ&usqp=CAU" width="250" height="500" alt="Saturn" style="width:100%">
+				<div class="text">Saturn</div>
+			</div>
+				<div class="slides fade">
+				<div class="numbertext">7 / 8</div>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3KMphml3e7IvQtp26ILIZlZPEicd0Eb6ixg&usqp=CAU" width="250" height="500" alt="Uranus" style="width:100%">
+				<div class="text">Uranus</div>
+			</div>
+				<div class="slides fade">
+				<div class="numbertext">8 / 8</div>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuTXG4vFgkdnDCnZDdmkHFwInLI5IELenaAQ&usqp=CAU" width="250" height="500" alt="Neptune" style="width:100%">
+				<div class="text">Neptune</div>
+			</div>
+		</div><br>
+		<div style="text-align:center">
+			<span class="dot" onclick="slideC(1)"></span>
+			<span class="dot" onclick="slideC(2)"></span>
+			<span class="dot" onclick="slideC(3)"></span>
+			<span class="dot" onclick="slideC(4)"></span>
+			<span class="dot" onclick="slideC(5)"></span>
+			<span class="dot" onclick="slideC(6)"></span>
+			<span class="dot" onclick="slideC(7)"></span>
+			<span class="dot" onclick="slideC(8)"></span>
+			<span class="dot" onclick="slideC(9)"></span>
+		</div>
   </body>
 </html>
