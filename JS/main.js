@@ -23,3 +23,6 @@
 				document.getElementById("srans").style.color = 'red';
 			}
 		}
+	var opeA = 115;
+	document.getElementById("operator1").innerHTML = (x === "115");
+	
