@@ -25,4 +25,20 @@
 		}
 	var opeA = 115;
 	document.getElementById("operator1").innerHTML = (x === "115");
-	
+	console.log(115 == 115);
+	//should be true
+	console.log(0 == false);
+	//should also be true
+	var opeB = 115
+	if(opeB > 100) { 
+		document.getElementById("operator1").style.color = 'green';
+	}
+	else if (opeB < 100) {
+		document.getElementById("operator1").style.color = 'red'
+	}
+	if (opeB > 100 && opeA > 100) {
+		document.getElementById("operator1").style.color = 'lime'
+	}
+	else if (opeB < 100 || opeA < 100) {
+		document.getElementById("operator1").style.color = 'purple'
+	}
