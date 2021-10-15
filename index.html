@@ -4,5 +4,29 @@
     <script src="JS/main.js"></script>
   </head>
   <body>
+    <h2><font color="silver" face="Lobster"><u> Years to Seconds </u></h2>
+				<h4 id="years2s"> Plug in desired years you want to use for time dilation calculations to get your t or T<sub>0</sub> value! </h4></font>
+			<p> 	Years (Unit: y)<input type="text" id="years"><br>
+			<button onclick="calcY()">Calculate Seconds</button></p>
+					<h2><font color="silver" face="Lobster"><u> Special Relativity </u></h2></p>
+				<h4 id="srans"> Try seeing how speed affects time! Answer will be in seconds. </h4></font>
+			<p> 	t (Unit: s)<input type="text" id="time1"><br>
+				V (Unit: m/s)<input type="text" id="vel"><br>
+				c (Value: 299,792,458)<input type="text" id="light1"><br>
+			<button onclick="calcR()">Calculate Special Relativity</button></p>
+					 <h2><font color="silver" face="Lobster"><u> Gravitational Time Dilation </u></h2></p>
+				<h4 id="gtdans"> Try seeing how gravity affects time! Answer will be in seconds. </h4></font>
+			<p> 	T<sub>0</sub> (Unit: s)<input type="text" id="time2"><br>
+				M (Unit: kg)<input type="text" id="mass"><br>
+				Exponent for M<input type="text" id="exop"><br>
+				r (Unit: m)<input type="text" id="dist"><br>
+				G (Value: 0.000000000066743)<input type="text" id="gcons"><br>
+				c (Value: 299,792,458)<input type="text" id="light2"><br>
+			<button onclick="calcG()">Calculate Time Dilation</button></p>
+					<h2><font color="silver" face="Lobster"><u> Seconds to Years </u></h2>
+				<h4 id="seconds2y"> Plug in answers from the time dilation calculators to see it in years! </h4></font>
+			<p> 	Seconds (Unit: s)<input type="text" id="seconds"><br>
+			<button onclick="calcS()">Calculate Years</button></p>
+			<p><a href="https://www.calculator.net/conversion-calculator.html" target="_blank" rel="noopener no referrer"> Helpful Unit Conversion Site!</a></p>
   </body>
 </html>
