@@ -56,3 +56,12 @@ function clocksS() {
 	document.getElementById("relativeX").innerHTML = "Reenter Light %";
 	document.getElementById("relativeX").style.color = 'red';
 }
+var planetsL = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+var planetsC = "";
+var counter;
+function planets() {
+	for (counter = 0; counter < planetsL.length; counter++) {
+		planetsC += counter + 1 + ".) " + planetsL[counter] + "<br>";
+	}
+	document.getElementById("planetsN").innerHTML = planetsC;
+}
