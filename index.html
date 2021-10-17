@@ -4,13 +4,22 @@
     <script src="JS/main.js"></script>
   </head>
   <body>
-    <p id="conca"></p>
-<button onclick="fsen()">Click</button>
-<p id="slice"></p>
-<button onclick="sliceR()">Click</button>
-<p id="string"></p>
-<button onclick="stringM()">Click</button>
-<p id="price"></p>
-<button onclick="priceM()">Click</button>
+    <p style="color:yellow;"> Enter a number between 1 & 100 below to see special relativity in clock time! </p>
+					<table>
+					<tr>
+						<td colspan="1"><input class="inputB" type="button" onclick="clocksS()" value="Reset"></td>
+						<td><input class="inputT" type="text" id="lightP"></td>
+						<td><input class="inputB" type="button" onclick="clocksA()" value="Run the Clocks!"></td>
+					<tr>
+						<th> Earth Time (Years) </th>
+						<th> Relative Time (Years) </th>
+						<th> Light Speed % </th>
+					</tr>
+					<tr>
+						<td id="earthX" style="background-color:yellow;"></td>
+						<td id="relativeX" style="background-color:yellow;"></td>
+						<td id="lightX" style="background-color:yellow;"></td>
+					</tr>
+					</table>
   </body>
 </html>
