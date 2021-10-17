@@ -65,3 +65,11 @@ function planets() {
 	}
 	document.getElementById("planetsN").innerHTML = planetsC;
 }
+function galaxyN() {
+	var galaxiesN = [];
+	galaxiesN[0] = "The Milky Way";
+	galaxiesN[1] = "Andromeda";
+	galaxiesN[2] = "Triangulum";
+	galaxiesN[3] = "NGC 6822";
+	document.getElementById("titles").innerHTML = galaxiesN[0];
+}
