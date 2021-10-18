@@ -1,4 +1,4 @@
-//running relativity clocks with a while loop (& using let) instead of a timer. Deft still think I prefer the timer but I do like while loops might research a way to add a delay to them.
+//running relativity clocks with a while loop instead of a timer. Deft still think I prefer the timer but I do like while loops might research a way to add a delay to them.
 var reset = 2;
 function clocksA() {
 	var light = document.getElementById("lightP").value;
