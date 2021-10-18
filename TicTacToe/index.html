@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <script src="JS/main.js"></script>
+  <style src="CSS/main.js"></style>
+</head>
+<body>
+<div id="backTac">
+			<input type="text" id="box1" onclick="turns1(); clickS();">
+			<input type="text" id="box2" onclick="turns2(); clickS();">
+			<input type="text" id="box3" onclick="turns3(); clickS();">
+			<input type="text" id="box4" onclick="turns4(); clickS();">
+			<input type="text" id="box5" onclick="turns5(); clickS();">
+			<input type="text" id="box6" onclick="turns6(); clickS();">
+			<input type="text" id="box7" onclick="turns7(); clickS();">
+			<input type="text" id="box8" onclick="turns8(); clickS();">
+			<input type="text" id="box9" onclick="turns9(); clickS();">
+</div>
+	<div id="board">
+		<h1>Mars vs. Earth!</h1>
+		<p id="boardC">Tap on a box to claim territory for your planet!<br><br><strong>Mars starts!</strong></p><br><br>
+	<table>
+		<tr>
+			<td id="img1"><input type="text" id="box1" onclick="turns1(); clickS();"></td>
+			<td id="img2"><input type="text" id="box2" onclick="turns2(); clickS();"></td>
+			<td id="img3"><input type="text" id="box3" onclick="turns3(); clickS();"></td>
+		</tr>
+		<tr>
+			<td id="img4"><input type="text" id="box4" onclick="turns4(); clickS();"></td>
+			<td id="img5"><input type="text" id="box5" onclick="turns5(); clickS();"></td>
+			<td id="img6"><input type="text" id="box6" onclick="turns6(); clickS();"></td>
+		</tr>
+		<tr>
+			<td id="img7"><input type="text" id="box7" onclick="turns7(); clickS();"></td>
+			<td id="img8"><input type="text" id="box8" onclick="turns8(); clickS();"></td>
+			<td id="img9"><input type="text" id="box9" onclick="turns9(); clickS();"></td>
+		</tr>
+	</table>
+			<button id="resets" onclick="resets()">New Game!</button><br><br>
+		<p id="winner"></p>
+	</div>
+</body>
+</html>
