@@ -34,6 +34,7 @@ function clocksA() {
 			document.getElementById("earthX").style.color = 'red';
 			document.getElementById("relativeX").innerHTML = "Reenter Light %";
 			document.getElementById("relativeX").style.color = 'red';
+			return;
 		}
 		else if (light > 100 || light < 0) {
 			let reset = 0
@@ -42,7 +43,8 @@ function clocksA() {
 			document.getElementById("earthX").innerHTML = "Reenter Light %";
 			document.getElementById("earthX").style.color = 'red';
 			document.getElementById("relativeX").innerHTML = "Reenter Light %";
-			document.getElementById("relativeX").style.color = 'red';						}
+			document.getElementById("relativeX").style.color = 'red';
+			return;
 		}
 	}
 }
