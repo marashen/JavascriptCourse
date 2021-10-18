@@ -1,4 +1,4 @@
-//running relativity clocks with a while loop instead of a timer. Deft still think I prefer the timer but I do like while loops might research a way to add a delay to them.
+//running relativity clocks with a while loop (& using let) instead of a timer. Deft still think I prefer the timer but I do like while loops might research a way to add a delay to them.
 var reset = 2;
 function clocksA() {
 	var light = document.getElementById("lightP").value;
@@ -8,7 +8,7 @@ function clocksA() {
 	document.getElementById("relativeX").style.color = 'green';
 	var lightD = parseFloat(light) / 100;
 	var earthT = 1;
-	reset = 1;
+	let reset = 1;
 	while (reset = 1) {
 		var lightS = earthT * 31557600;
 		var lqp1 = 299792458 * 299792458;
@@ -27,7 +27,7 @@ function clocksA() {
 		earthT++;
 		earthX.innerHTML = earthT;
 		if (isNaN(light)) {
-			reset = 0
+			let reset = 0
 			document.getElementById("lightX").innerHTML = "Reenter Light %";
 			document.getElementById("lightX").style.color = 'red';
 			document.getElementById("earthX").innerHTML = "Reenter Light %";
@@ -36,7 +36,7 @@ function clocksA() {
 			document.getElementById("relativeX").style.color = 'red';
 		}
 		else if (light > 100 || light < 0) {
-			reset = 0
+			let reset = 0
 			document.getElementById("lightX").innerHTML = "Reenter Light %";
 			document.getElementById("lightX").style.color = 'red';
 			document.getElementById("earthX").innerHTML = "Reenter Light %";
@@ -48,7 +48,7 @@ function clocksA() {
 }
 //stopping the while loop
 function clocksS() {
-	reset = 0
+	var reset = 0
 	var earthT = 0
 	var lightS = 0
 	document.getElementById("lightX").innerHTML = "Reenter Light %";
