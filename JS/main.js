@@ -58,8 +58,8 @@ function clocksS() {
 	document.getElementById("relativeX").innerHTML = "Reenter Light %";
 	document.getElementById("relativeX").style.color = 'red';
 }
-//just a planets list utilizing the for loop
-var planetsL = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+//just a planets list utilizing the for loop & a constant
+const planetsL = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
 var planetsC = "";
 var counter;
 function planets() {
