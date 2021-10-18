@@ -1,4 +1,4 @@
-//running relativity clocks with a while loop instead of a timer. Deft still think I prefer the timer but I do like while loops might research a way to add a delay to them.
+//running relativity clocks with a while loop & returns instead of a timer. Deft still think I prefer the timer but I do like while loops might research a way to add a delay to them.
 var reset = 2;
 function clocksA() {
 	var light = document.getElementById("lightP").value;
@@ -70,7 +70,7 @@ function planets() {
 	}
 	document.getElementById("planetsN").innerHTML = planetsC;
 }
-//Naming & information mechanism for images
+//naming & information mechanism for images using objects & let
 var galaxiesN = [];
 function galaxy(Name, Distance, Diameter, Stars) {
 	this.galaxyN = Name;
@@ -79,10 +79,10 @@ function galaxy(Name, Distance, Diameter, Stars) {
 	this.galaxyS = Stars;
 	galaxiesT();
 }
-var g1 = new galaxy("The Milky Way", "26,000 ly", "100,000 ly's", "100 billion");
-var g2 = new galaxy("Andromeda", "2.537m ly", "260,000 ly's", "1 trillion");
-var g3 = new galaxy("Triangulum", "2.723m ly", "60,000 ly's", "40 billion");
-var g4 = new galaxy("NGC 6822", "1.631m ly", "7,000 ly's", "10 million");
+let g1 = new galaxy("The Milky Way", "26,000 ly", "100,000 ly's", "100 billion");
+let g2 = new galaxy("Andromeda", "2.537m ly", "260,000 ly's", "1 trillion");
+let g3 = new galaxy("Triangulum", "2.723m ly", "60,000 ly's", "40 billion");
+let g4 = new galaxy("NGC 6822", "1.631m ly", "7,000 ly's", "10 million");
 //setting up the name array
 function galaxiesT() {
 	galaxiesN[0] = "The Milky Way";
